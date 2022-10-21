@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: sienna;
+}
+.game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 60px solid #34a026;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(#87ceeb, #e0f6ff); */
+}
+
+.motobug {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  animation: motobug-animation 1.5s infinite linear;
+}
+
+.sonic {
+  width: 110px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.clouds {
+  position: absolute;
+  width: 100vw;
+  margin-top: 0;
+  animation: clouds-animation 20s infinite linear;
+}
+.clouds2 {
+  position: absolute;
+  width: 100vw;
+  margin-top: 0;
+  animation: clouds-animation2 20s infinite linear;
+}
+
+@keyframes motobug-animation {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0px;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes clouds-animation2 {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/* footer {
+
+} */
